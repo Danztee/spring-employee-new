@@ -34,8 +34,6 @@ public class Employee {
 
 
 //    define getters/setters
-
-
     public int getId() {
         return id;
     }
@@ -69,8 +67,6 @@ public class Employee {
     }
 
 //    define toString
-
-
     @Override
     public String toString() {
         return "Employee{" +
