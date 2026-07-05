@@ -31,7 +31,7 @@ public class EmployeeRestController {
         return employeeService.save(theEmployee);
     }
 
-    @PutMapping("/employees")
+    @PutMapping("/employees/{employeeId}")
     public Employee update(@RequestBody Employee theEmployee) {
         return employeeService.save(theEmployee);
     }
@@ -61,9 +61,7 @@ public class EmployeeRestController {
 
         Employee patchedEmployee = jsonMapper.updateValue(tempEmployee, patchPayload);
 
-        Employee dbEmployee = employeeService.save(patchedEmployee);
-
-        return dbEmployee;
+        return employeeService.save(patchedEmployee);
     }
 
 

@@ -27,7 +27,7 @@ public class Employee {
     }
 
     public Employee(String firstName, String lastName, String email) {
-        firstName = firstName;
+        this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
     }
@@ -49,7 +49,7 @@ public class Employee {
     }
 
     public void setFirstName(String firstName) {
-        firstName = firstName;
+        this.firstName = firstName;
     }
 
     public String getLastName() {
